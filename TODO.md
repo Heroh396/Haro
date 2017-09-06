@@ -10,5 +10,9 @@
 -->
 
 gnome-screensaver-command -a
+
 at -f filename.sh now + 1 minutes
+
 notify-send -i imgFile.jpg "Title" "notification information"
+
+gm-notify
