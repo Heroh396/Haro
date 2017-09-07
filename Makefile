@@ -17,7 +17,7 @@ vpath %.png %.jpg 	icon
 
 all :
 	@echo "sh $(PWD)/schedule.sh" >> ~/.profile
-	@echo "You must restart your computer to apply these changes."
+	@echo "You must log out or restart your computer to apply these changes."
 
 clean :
 	@sed -i '/schedule.sh/d' ~/.profile

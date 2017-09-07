@@ -31,7 +31,7 @@ Features
 Requirements
 ============
 
-- Ball shell
+- Bash shell
 - Notify-send
 - [At command](https://linux.die.net/man/1/at)
 

@@ -19,7 +19,6 @@ BASEDIR=$(dirname $(readlink -f "$0"))
 # Resting my eyes
 RESTTIME="09:50 10:50 11:50 12:50 13:50 14:50 15:50 16:50 20:50 21:50
 22:50 23:50"
-
 for time in $RESTTIME
 do
 	at -f $BASEDIR/job/warningTime.sh $time
