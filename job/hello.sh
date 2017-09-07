@@ -7,14 +7,15 @@
 # Guide          :
 # -----------------------------------------------------------------------------
 #!/bin/bash
-bellIcon="/home/Working/Project/haro/icon/bell.png"
+BASEDIR=$(dirname $(readlink -f "$0"))
+bellIcon="$BASEDIR/../icon/bell.png"
 
 if  [ `date +"%H%M"` -le 1200 ]
 then
-	notify-send -i $bellIcon 'Good moring, sir!' 'Have a good day'
+	notify-send -i $bellIcon 'Haro assistant' 'Good moring, sir! \n Have a good day.'
 elif [ `date +"%H%M"` -le 1800 ]
 then
-	notify-send -i $bellIcon 'Good afternoon, sir!' 'Best wishes for sir'
+	notify-send -i $bellIcon 'Haro assistant' 'Good afternoon, sir! \n Best wishes for you.'
 else
-	notify-send -i $bellIcon 'Good evening, sir!' 'Relax and sleep soon :D'
+	notify-send -i $bellIcon 'Haro assistant' 'Good evening, sir! \n Relax and sleep soon.'
 fi

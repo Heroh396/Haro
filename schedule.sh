@@ -14,17 +14,17 @@
 env DISPLAY=:0
 
 # Some variables
-root="/home/Working/Project/haro"
+BASEDIR=$(dirname $(readlink -f "$0"))
 
 # Resting my eyes
-restTime="09:50 10:50 11:50 12:50 13:50 14:50 15:50 16:50 20:50 21:50
+RESTTIME="09:50 10:50 11:50 12:50 13:50 14:50 15:50 16:50 20:50 21:50
 22:50 23:50"
 
-for time in $restTime
+for time in $RESTTIME
 do
-	at -f $root/job/lock.sh $time
+	at -f $BASEDIR/job/warningTime.sh $time
 done
 
 
 # Greeting
-at -f $root/job/hello.sh now + 1 minutes
+at -f $BASEDIR/job/hello.sh now + 1 minutes

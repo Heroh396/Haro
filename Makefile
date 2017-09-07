@@ -15,9 +15,9 @@ CLEAR_SCREEN := clear
 vpath %.sh 			job
 vpath %.png %.jpg 	icon
 
-SRCS := $(wildcard sh/*.$(LANG))
-
-all : $(SRCS)
-	sh $(SRCS)
+all :
+	@echo "sh $(PWD)/schedule.sh" >> ~/.profile
+	@echo "You must restart your computer to apply these changes."
 
 clean :
+	@sed -i '/schedule.sh/d' ~/.profile
