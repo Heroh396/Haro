@@ -12,10 +12,11 @@ LFLAGS 	+=
 TARGET 	:=
 CLEAR_SCREEN := clear
 
-vpath %.sh 			job
-vpath %.png %.jpg 	icon
+SRCS := $(wildcard job/*.$(LANG))
 
-all :
+
+all : $(SRCS)
+	@chmod u+x $(SRCS) schedule.sh
 	@echo "sh $(PWD)/schedule.sh" >> ~/.profile
 	@echo "You must log out or restart your computer to apply these changes."
 
