@@ -32,11 +32,13 @@ Requirements
 ============
 
 - Ball shell
-- Notify-send
-- [At command](https://linux.die.net/man/1/at)
-
+- Notify-send	: `sudo apt-get install notify-send`
+- At			: `sudo apt-get install at`
 
 Install
 =======
 
-Run `make` in terminal
+To build this software you just need to:
+- `make`
+To remove this software:
+- `make clean`
