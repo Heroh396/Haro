@@ -19,26 +19,32 @@ She is very aweful.
 Features
 ========
 
-- Communicate
++ Communicate: greeting, warning
++ Get the email
++ Learning English
 - Create job from excel table
-- Get the email and auto send mail
-- Notification:
-	+ Relaxing every hours
-	+ Playing music
-	+ Learning English
+- Auto send mail
+- Relaxing every hours
+- Playing music
+- Check fb: using [Facebook Graph API](https://developers.facebook.com/docs/reference/api/)
 
 
 Requirements
 ============
 
-- Bash shell
-- Notify-send	: `sudo apt-get install notify-send`
-- At			: `sudo apt-get install at`
+- Linux, bash shell
+- Notify-send
+- At
+- Crontab
+
 
 Install
 =======
 
 To build this software you just need to:
-- `make`
+- `chmod u+x run.sh`
+- `run.sh`
+
 To remove this software:
-- `make clean`
+- `chmod u+x clean.sh`
+- `clean.sh`

@@ -15,4 +15,8 @@ at -f filename.sh now + 1 minutes
 
 notify-send -i imgFile.jpg "Title" "notification information"
 
-gm-notify
+unity-mail
+
+eval "export $(egrep -z DBUS_SESSION_BUS_ADDRESS /proc/$(pgrep -u $LOGNAME gnome-session)/environ)";
+/usr/bin/notify-send -i /home/Working/Project/haro/icon/bell.png "Haro assistant" "Hello world!"
+

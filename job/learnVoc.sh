@@ -1,19 +1,20 @@
 # -----------------------------------------------------------------------------
 # Project name   :
-# File name      : job/warningTime.sh
-# Created date   : Thu 07 Sep 2017 10:38:14 AM ICT
+# File name      : learnVoc.sh
+# Created date   : Fri 08 Sep 2017 11:08:39 AM ICT
 # Author         : Huy-Hung Ho
-# Last modified  : Thu 07 Sep 2017 10:38:14 AM ICT
+# Last modified  : Fri 08 Sep 2017 11:08:39 AM ICT
 # Guide          :
 # -----------------------------------------------------------------------------
 #!/bin/bash
 
-# Requerement
+# Requirement
 eval "export $(egrep -z DBUS_SESSION_BUS_ADDRESS /proc/$(pgrep -u $LOGNAME gnome-session)/environ)";
 
 # Variable
-BASEDIR=$(dirname $(readlink -f "$0"))
-icon="$BASEDIR/../icon/relax.png"
+BASEDIR=$(dirname $(readlink -m "$0"))
+icon="$BASEDIR/../icon/english.png"
 
 # Command
-notify-send -i $icon 'Haro assistant' 'Sleep computer for relax your eyes.'
+notify-send -i $icon "Haro assistant" "$(shuf -n 1 $BASEDIR/voc.txt)"
+#/usr/bin/goldendict hello
