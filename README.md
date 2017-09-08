@@ -21,7 +21,11 @@ Features
 
 + Communicate: greeting, warning
 + Get the email
+	+ Install unity-mail to use
 + Learning English
+	+ Edit file job/voc.txt to add new vocabulary
+
+
 - Create job from excel table
 - Auto send mail
 - Relaxing every hours
@@ -43,8 +47,8 @@ Install
 
 To build this software you just need to:
 - `chmod u+x run.sh`
-- `run.sh`
+- `./run.sh`
 
 To remove this software:
 - `chmod u+x clean.sh`
-- `clean.sh`
+- `./clean.sh`
