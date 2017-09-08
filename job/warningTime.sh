@@ -16,4 +16,4 @@ BASEDIR=$(dirname $(readlink -f "$0"))
 icon="$BASEDIR/../icon/relax.png"
 
 # Command
-notify-send -i $icon 'Haro assistant' 'Sleep computer for relax your eyes.'
+notify-send -i $icon 'Haro assistant' 'Sleep computer for relax your eyes.\n The computer will sleep after 1 minute.'

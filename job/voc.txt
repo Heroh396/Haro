@@ -33,5 +33,5 @@ process		[ˈproʊses] 		: a series of things that are done in order to achieve a
 naive		[naɪˈiːv]		: chat phac
 approximate	[əˈprɒksɪmət]	: xap xi
 figure	 	[ˈfɪɡə(r)]		: a number representing a particular amount, especially one given in official information
-proportional	/prəˈpôrSH(ə)n(ə)l/	: cân bằng, tỉ lệ, tương xứng
-evaluation 		/əˌvalyəˈwāSH(ə)n/	: đánh giá
+proportional /prəˈpôrSH(ə)n(ə)l/: cân bằng, tỉ lệ, tương xứng
+evaluation 	 /əˌvalyəˈwāSH(ə)n/	: đánh giá

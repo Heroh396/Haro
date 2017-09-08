@@ -8,5 +8,9 @@
 # -----------------------------------------------------------------------------
 #!/bin/bash
 
-gnome-screensaver-command -a
+# Requirement
+eval "export $(egrep -z DBUS_SESSION_BUS_ADDRESS /proc/$(pgrep -u $LOGNAME gnome-session)/environ)";
+
+sleep 1
+gnome-screensaver-command -la
 

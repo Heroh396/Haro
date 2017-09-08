@@ -16,15 +16,22 @@ export DISPLAY=:0
 BASEDIR=$(dirname $(readlink -m "$0"))
 
 # Install app
-command -v notify-send >/dev/null 2>&1 || sudo apt-get install notify-send
-command -v at >/dev/null 2>&1 || sudo apt-get install at
-command -v crontab >/dev/null 2>&1 || sudo apt-get install crontab
+command -v notify-send >/dev/null 2>&1 	|| sudo apt-get install notify-send
+command -v at >/dev/null 2>&1 			|| sudo apt-get install at
+command -v crontab >/dev/null 2>&1 		|| sudo apt-get install crontab
 
 # Some variables
 
 # Resting my eyes
-(crontab -l ; echo "50 * * * * $BASEDIR/job/warningTime.sh") | crontab -
-(crontab -l ; echo "*/2 * * * * $BASEDIR/job/learnVoc.sh") | crontab -
+if [[ $(crontab -l | grep -c warningTime) -eq 0 ]]
+then
+	(crontab -l ; echo "50 * * * * $BASEDIR/job/warningTime.sh") | crontab -
+	(crontab -l ; echo "51 * * * * $BASEDIR/ job/lock.sh") | crontab -
+	(crontab -l ; echo "*/2 * * * * $BASEDIR/job/learnVoc.sh") | crontab -
+fi
 
 # Greeting
-echo "at -f "$BASEDIR/job/greeting.sh" now + 1 minute" >> ~/.profile
+if [[ $(grep -c warningTime ~/.profile) -eq 0 ]]
+then
+	echo "at -f "$BASEDIR/job/greeting.sh" now + 1 minute" >> ~/.profile
+fi
