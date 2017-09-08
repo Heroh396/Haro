@@ -26,6 +26,9 @@ Features
 	+ Edit file job/voc.txt to add new vocabulary
 
 
+Next feature
+============
+
 - Create job from excel table
 - Auto send mail
 - Relaxing every hours
