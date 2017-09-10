@@ -16,5 +16,8 @@ BASEDIR=$(dirname $(readlink -m "$0"))
 icon="$BASEDIR/../icon/english.png"
 
 # Command
-notify-send -i $icon "Haro assistant" "$(shuf -n 1 $BASEDIR/voc.txt)"
+notify-send -i $icon "Haro assistant" "$(head -n 1 $BASEDIR/../voc.txt)"
+
+awk '{ if ( NR == 1 ) { store=$0 } else { print } }END{ print store }' $BASEDIR/../voc.txt > $BASEDIR/../tmp.txt
+mv $BASEDIR/../tmp.txt $BASEDIR/../voc.txt
 #/usr/bin/goldendict hello
