@@ -1,6 +1,3 @@
-decouple 	/dēˈkəpəl/		: tach ra
-imperative 	/əmˈperədiv/	: bat buoc
-devise 		/dəˈvīz/Submit	: phat minh ra, nghi ra
 compensate 	/ˈkämpənˌsāt/	: bu dap
 majority 	/məˈjôrədē/		: phan lon
 express		[ɪkˈspres]		: bieu dien
@@ -35,3 +32,6 @@ attractive 	/əˈtraktiv/		: hấp dẫn
 promise		/präməs/		: trien vong
 mitigate 	[ˈmɪtɪɡeɪt]		: make less severe, serious, or painful
 potential 	/pəˈten(t)SHəl/	: having or showing the capacity to become or develop into something in the future (tiem nang)
+decouple 	/dēˈkəpəl/		: tach ra
+imperative 	/əmˈperədiv/	: bat buoc
+devise 		/dəˈvīz/Submit	: phat minh ra, nghi ra
