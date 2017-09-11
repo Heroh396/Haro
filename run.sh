@@ -20,13 +20,15 @@ command -v notify-send >/dev/null 2>&1 	|| sudo apt-get install notify-send
 command -v at >/dev/null 2>&1 			|| sudo apt-get install at
 command -v crontab >/dev/null 2>&1 		|| sudo apt-get install crontab
 
-# Some variables
+# Permission
+chmod u+x $BASEDIR/job/*.sh $BASEDIR/*.sh
+
 
 # Resting my eyes
 if [[ $(crontab -l | grep -c warningTime) -eq 0 ]]
 then
 	(crontab -l ; echo "50 * * * * $BASEDIR/job/warningTime.sh") | crontab -
-	(crontab -l ; echo "51 * * * * $BASEDIR/ job/lock.sh") | crontab -
+	(crontab -l ; echo "51 * * * * $BASEDIR/job/lock.sh") | crontab -
 	(crontab -l ; echo "*/2 * * * * $BASEDIR/job/learnVoc.sh") | crontab -
 fi
 

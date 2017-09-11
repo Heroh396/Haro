@@ -20,10 +20,10 @@ Features
 ========
 
 + Communicate: greeting, warning
-+ Get the email
++ Notification new email
 	+ Install unity-mail to use
 + Learning English
-	+ Edit file job/voc.txt to add new vocabulary
+	+ Edit file voc.txt to add new vocabulary
 
 
 Next feature
@@ -34,6 +34,7 @@ Next feature
 - Relaxing every hours
 - Playing music
 - Check fb: using [Facebook Graph API](https://developers.facebook.com/docs/reference/api/)
+- Configure individual user
 
 
 Requirements
@@ -53,5 +54,4 @@ To build this software you just need to:
 - `./run.sh`
 
 To remove this software:
-- `chmod u+x clean.sh`
 - `./clean.sh`

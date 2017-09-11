@@ -19,4 +19,5 @@ unity-mail
 
 eval "export $(egrep -z DBUS_SESSION_BUS_ADDRESS /proc/$(pgrep -u $LOGNAME gnome-session)/environ)";
 /usr/bin/notify-send -i /home/Working/Project/haro/icon/bell.png "Haro assistant" "Hello world!"
+awk '{ if ( NR == 1 ) { store=$0 } else { print } }END{ print store }' test1.txt > test2.txt; mv test2.txt test1.txt;
 
