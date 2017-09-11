@@ -1,4 +1,3 @@
-compensate 	/ˈkämpənˌsāt/	: bu dap
 majority 	/məˈjôrədē/		: phan lon
 express		[ɪkˈspres]		: bieu dien
 obtain 		[əbˈteɪn]		: dat duoc
@@ -35,3 +34,4 @@ potential 	/pəˈten(t)SHəl/	: having or showing the capacity to become or deve
 decouple 	/dēˈkəpəl/		: tach ra
 imperative 	/əmˈperədiv/	: bat buoc
 devise 		/dəˈvīz/Submit	: phat minh ra, nghi ra
+compensate 	/ˈkämpənˌsāt/	: bu dap
