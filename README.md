@@ -26,8 +26,8 @@ Features
 	+ Edit file voc.txt to add new vocabulary
 
 
-Next feature
-============
+Feature in the future
+=====================
 
 - Create job from excel table
 - Auto send mail
