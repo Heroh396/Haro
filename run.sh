@@ -35,5 +35,5 @@ fi
 # Greeting
 if [[ $(grep -c warningTime ~/.profile) -eq 0 ]]
 then
-	echo "at -f "$BASEDIR/job/greeting.sh" now + 1 minute" >> ~/.profile
+	echo "at -f "$BASEDIR/job/greeting.sh" now + 1 minute 2> /dev/null" >> ~/.profile
 fi

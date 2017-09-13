@@ -1,7 +1,9 @@
+fading [feɪd]				: su tat dan
 majority 	/məˈjôrədē/		: phan lon
 express		[ɪkˈspres]		: bieu dien
 obtain 		[əbˈteɪn]		: dat duoc
 scheme 		[skiːm] 		: a plan or system for doing or organizing sth
+feature [ˈfiːtʃə(r)] : something important, interesting or typical of a place or thing
 process		[ˈproʊses] 		: a series of things that are done in order to achieve a particular result
 naive		[naɪˈiːv]		: chat phac
 approximate	[əˈprɒksɪmət]	: xap xi
@@ -10,20 +12,27 @@ figure	 	[ˈfɪɡə(r)]		: a number representing a particular amount, especially
 proportional /prəˈpôrSH(ə)n(ə)l/: cân bằng, tỉ lệ, tương xứng
 evaluation 	 /əˌvalyəˈwāSH(ə)n/	: đánh giá
 /I/ with smile face, /i:/ not laugh (it vs eat)
+consumpsion [kənˈsʌmpʃn]
 CMPs	 	: chip multiprocessors
 PEs			: processing elements (PEs), in PEs, NIs, R
 ---         ---             --- 		\n The next part is the vocabularies
+utilize		[ˈjuːtəlaɪz]	: to use sth, especially for a practical purpose
 multiple 	[ˈmʌltɪpl]		: many in number
 confine		[kənˈfaɪn]		: gioi han
+satellite 	[ˈsætəlaɪt] 	: ve tinh
 sufficiently[səˈfɪʃnt]		: du, thich dang
 compensate	[ˈkɒmpenseɪt]	: den bu
 associate	[əˈsəʊʃieɪt]	: lien ket
 critical	[ˈkrɪtɪkl]		: quan trong, gioi han
 cumulative	[ˈkjuːmjələtɪv]	: tich luy decouple: 	tach roi
 bypass		[ˈbaɪpɑːs]		: bo qua
+conventions [kənˈvenʃn] : a traditional method or style in literature, art or the theatre
 ability		[əˈbɪləti]		: nang luc
 proof		[pruːf]			: su chung minh
 draw		[drɔː]			: loi keo
+interference [ˌɪntəˈfɪərəns] : giao thoa, nhieu
+declaration [ˌdekləˈreɪʃn] : a written or spoken statement, especially about what people feel or believe
+dominate [ˈdɒmɪneɪt] : to control or have a lot of influence over sb/sth
 impact		[ˈɪmpækt]		: tac dong
 ensure 		/in'ʃuə/		: đảm bảo
 observe 	/əbˈzərv/		: quan sát 
@@ -32,6 +41,7 @@ promise		/präməs/		: trien vong
 mitigate 	[ˈmɪtɪɡeɪt]		: make less severe, serious, or painful
 potential 	/pəˈten(t)SHəl/	: having or showing the capacity to become or develop into something in the future (tiem nang)
 decouple 	/dēˈkəpəl/		: tach ra
+impact [ˈɪmpækt] : tac dong, anh huong, va cham
 imperative 	/əmˈperədiv/	: bat buoc
 devise 		/dəˈvīz/Submit	: phat minh ra, nghi ra
 compensate 	/ˈkämpənˌsāt/	: bu dap
