@@ -1,0 +1,14 @@
+# -----------------------------------------------------------------------------
+# Project name   :
+# File name      : add.sh
+# Created date   : Sun 10 Sep 2017 10:20:30 PM ICT
+# Author         : Huy-Hung Ho
+# Last modified  : Sun 10 Sep 2017 10:20:30 PM ICT
+# Guide          :
+# -----------------------------------------------------------------------------
+#!/bin/bash
+BASEDIR=$(dirname $(readlink -m "$0"))
+
+sed -i '1i\'"$1" $BASEDIR/../text/voc.txt
+
+

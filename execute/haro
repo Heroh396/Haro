@@ -1,0 +1,29 @@
+# -----------------------------------------------------------------------------
+# Project name   :
+# File name      : haro.sh
+# Created date   : Thu 28 Sep 2017 09:20:11 AM ICT
+# Author         : Huy-Hung Ho
+# Last modified  : Thu 28 Sep 2017 09:20:11 AM ICT
+# Guide          :
+# -----------------------------------------------------------------------------
+#!/bin/bash
+
+BASEDIR=$(dirname $(readlink -m "$0"))
+
+echo $1 >> $BASEDIR/../text/log.txt
+
+if echo $1 | grep -q "?"
+then
+	shuf -n 1 $BASEDIR/../text/answer.txt
+else
+	echo -ne '#                         (1%)\r'
+	sleep 1
+	echo -ne '#####                     (33%)\r'
+	sleep 1
+	echo -ne '#############             (66%)\r'
+	sleep 1
+	echo -ne '#######################   (99%)\r'
+	sleep 3
+	echo -ne '\n'
+	echo "Bị lừa rồi. Haha"
+fi

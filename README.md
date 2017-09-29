@@ -20,10 +20,13 @@ Features
 ========
 
 + Communicate: greeting, warning
+	+ Using command to comunicate with Ms.Haro
+		Ex: haro "Hello haro"
 + Notification new email
 	+ Install unity-mail to use
 + Learning English
-	+ Edit file voc.txt to add new vocabulary
+	+ Using command to add new vocabulary
+		Ex: voc "hello [həˈloʊ] : xin chao"
 
 
 Feature in the future
@@ -50,6 +53,8 @@ Install
 =======
 
 To build this software you just need to:
+- `git clone https://github.com/yoloh3/Haro`
+- `cd Haro`
 - `chmod u+x run.sh`
 - `./run.sh`
 

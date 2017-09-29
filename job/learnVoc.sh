@@ -10,16 +10,16 @@
 
 # Requirement
 eval "export $(egrep -z DBUS_SESSION_BUS_ADDRESS /proc/$(pgrep -u $LOGNAME gnome-session)/environ)"
-export DISPLAY=:0.0
+#export DISPLAY=:0.0
 
 # Variable
 BASEDIR=$(dirname $(readlink -m "$0"))
 icon="$BASEDIR/../icon/english.png"
+voc="$BASEDIR/../text/voc.txt"
 
 # Command
-notify-send -i $icon "Haro assistant" "$(head -n 1 $BASEDIR/../voc.txt)"
-head -n 1 $BASEDIR/../voc.txt | awk '{print $1;}' | xclip -selection clipboard
+notify-send -i $icon "Haro assistant" "$(head -n 1 $voc)"
+head -n 1 $voc | awk '{print $1;}' | xclip -selection clipboard
 
-awk '{ if ( NR == 1 ) { store=$0 } else { print } }END{ print store }' $BASEDIR/../voc.txt > $BASEDIR/../tmp.txt
-mv $BASEDIR/../tmp.txt $BASEDIR/../voc.txt
-#/usr/bin/goldendict hello
+awk '{ if ( NR == 1 ) { store=$0 } else { print } }END{ print store }' $voc > tmp.txt
+mv tmp.txt $voc

@@ -1,0 +1,13 @@
+# -----------------------------------------------------------------------------
+# Project name   :
+# File name      : job/weather.sh
+# Created date   : Wed 27 Sep 2017 09:12:56 PM ICT
+# Author         : Huy-Hung Ho
+# Last modified  : Wed 27 Sep 2017 09:12:56 PM ICT
+# Guide          :
+# -----------------------------------------------------------------------------
+#!/bin/bash
+
+CITY="hanoi"
+
+notify-send "$(curl wttr.in/$CITY 2>/dev/null 3>/dev/null | head -n 7| sed -r "s:\x1B\[[0-9;]*[mK]::g")"
