@@ -21,12 +21,12 @@ Features
 
 + Communicate: greeting, warning
 	+ Using command to comunicate with Ms.Haro
-		Ex: haro "Hello haro"
+		_Ex: haro "Hello haro"_
 + Notification new email
 	+ Install unity-mail to use
 + Learning English
 	+ Using command to add new vocabulary
-		Ex: voc "hello [həˈloʊ] : xin chao"
+		_Ex: voc "hello [həˈloʊ] : xin chao"_
 
 
 Feature in the future
