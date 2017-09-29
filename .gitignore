@@ -1,0 +1,11 @@
+*.[oa]
+~*
+.*
+*~*
+*.swo
+*.swp
+*.obj
+*.out
+svn/
+*log.txt
+*voc.txt
