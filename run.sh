@@ -30,6 +30,7 @@ then
 	(crontab -l ; echo "50 * * * * $BASEDIR/job/warningTime.sh") | crontab -
 	(crontab -l ; echo "51 * * * * $BASEDIR/job/lock.sh") | crontab -
 	(crontab -l ; echo "*/2 * * * * $BASEDIR/job/learnVoc.sh") | crontab -
+
 fi
 
 # Greeting
@@ -39,3 +40,6 @@ then
 	echo "at -f "$BASEDIR/job/weather.sh" now + 2 minute 2> /dev/null" >> ~/.profile
 	echo "PATH=\"$BASEDIR/execute:\$PATH\"" >> ~/.profile
 fi
+
+# Note
+echo "You must restart your computer to apply these changes"
