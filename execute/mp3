@@ -1,0 +1,12 @@
+# -----------------------------------------------------------------------------
+# Project name   :
+# File name      : mp3.sh
+# Created date   : Mon 02 Oct 2017 10:28:36 PM ICT
+# Author         : Huy-Hung Ho
+# Last modified  : Mon 02 Oct 2017 10:28:36 PM ICT
+# Guide          :
+# -----------------------------------------------------------------------------
+#!/bin/bash
+
+youtube-dl --extract-audio --audio-format mp3 --audio-quality 0 --ignore-errors -o "%(title)s.%(ext)s" $@
+
