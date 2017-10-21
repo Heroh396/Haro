@@ -7,7 +7,10 @@
 # Guide          :
 # -----------------------------------------------------------------------------
 #!/bin/bash
+BASEDIR=$(dirname $(readlink -m "$0"))
 
 CITY="hanoi"
 
 notify-send "$(curl wttr.in/$CITY 2>/dev/null 3>/dev/null | head -n 7| sed -r "s:\x1B\[[0-9;]*[mK]::g")"
+
+history 1 >> $BASEDIR/../text/log.txt

@@ -19,25 +19,37 @@ She is very aweful.
 Features
 ========
 
-+ Communicate: greeting, warning
-	+ Using command to comunicate with Ms.Haro
-		_Ex: haro "Hello haro"_
-+ Notification new email
-	+ Install unity-mail to use
-+ Learning English
-	+ Using command to add new vocabulary
-		_Ex: voc "hello [həˈloʊ] : xin chao"_
+[+] Haro: assistant communication (greeting, warning)
+	- Using command to comunicate with Ms.Haro
+	- $ haro "Why am I ?"
 
+[+] Notification new email
+	- Install unity-mail to use
 
-Feature in the future
-=====================
+[+] Voc: Learning English
+	- Using command to add new vocabulary
+	- $ voc "hello [həˈloʊ] : xin chao"
 
-- Create job from excel table
-- Auto send mail
-- Relaxing every hours
-- Playing music
-- Check fb: using [Facebook Graph API](https://developers.facebook.com/docs/reference/api/)
-- Configure individual user
+[+] Mp3: Convert youtube video to mp3 and save in ~/Music
+	- $ mp3 https://www.youtube.com/watch?v=9bZkp7q19f0
+
+[+] Weather: Check Hanoi wether when login
+	- $ weather 	(check weather online)
+
+[+] Read ieeexplore paper free
+	- $ paper ieeexplore.ieee.org/document/7799795/
+
+[ ] Create job from excel table
+
+[ ] Auto send mail
+
+[ ] Relaxing every hours
+
+[ ] Playing music
+
+[ ] Check fb: using [Facebook Graph API](https://developers.facebook.com/docs/reference/api/)
+
+[ ] Configure individual user
 
 
 Requirements

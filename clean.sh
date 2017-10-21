@@ -13,5 +13,6 @@ crontab -r
 
 # Delete in .profile
 sed -i '/greeting.sh/d' ~/.profile
-sed -i '/weather.sh/d' ~/.profile
-sed -i '/execute/d' ~/.profile
+sed -i '/weather.sh/d' 	~/.profile
+sed -i '/execute/d' 	~/.profile
+sed -i '/haro/d' 		~/.profile

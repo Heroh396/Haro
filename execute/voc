@@ -1,9 +1,9 @@
 # -----------------------------------------------------------------------------
 # Project name   :
-# File name      : add.sh
+# File name      : voc
 # Created date   : Sun 10 Sep 2017 10:20:30 PM ICT
 # Author         : Huy-Hung Ho
-# Last modified  : Sun 10 Sep 2017 10:20:30 PM ICT
+# Last modified  : Sat 21 Oct 2017 10:51:54 AM ICT
 # Guide          :
 # -----------------------------------------------------------------------------
 #!/bin/bash
@@ -11,4 +11,4 @@ BASEDIR=$(dirname $(readlink -m "$0"))
 
 sed -i '1i\'"$1" $BASEDIR/../text/voc.txt
 
-
+history 1 >> $BASEDIR/../text/log.txt

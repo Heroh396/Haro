@@ -10,7 +10,7 @@
 
 BASEDIR=$(dirname $(readlink -m "$0"))
 
-echo $1 >> $BASEDIR/../text/log.txt
+echo $1 >> $BASEDIR/../text/question.txt
 
 if echo $1 | grep -q "?"
 then
@@ -27,3 +27,5 @@ else
 	echo -ne '\n'
 	echo "Bị lừa rồi. Haha"
 fi
+
+history 1 >> $BASEDIR/../text/log.txt

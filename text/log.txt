@@ -1,6 +1,3 @@
-di dau ko?
-TEST?
-hello
-Buon qua
-Buon qua?
-ko
+google-chrome --new-tab google.com
+ 2110  paper https://sci-hub.io/http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7943123
+ 2001  weather 

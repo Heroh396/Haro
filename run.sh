@@ -37,7 +37,7 @@ fi
 if [[ $(grep -c warningTime ~/.profile) -eq 0 ]]
 then
 	echo "at -f "$BASEDIR/job/greeting.sh" now + 1 minute 2> /dev/null" >> ~/.profile
-	echo "at -f "$BASEDIR/job/weather.sh" now + 2 minute 2> /dev/null" >> ~/.profile
+	echo "at -f "$BASEDIR/execute/weather" now + 2 minute 2> /dev/null" >> ~/.profile
 	echo "PATH=\"$BASEDIR/execute:\$PATH\"" >> ~/.profile
 fi
 

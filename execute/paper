@@ -1,0 +1,34 @@
+# -----------------------------------------------------------------------------
+# Project name   :
+# File name      : paper
+# Created date   : Sat 21 Oct 2017 09:33:23 AM ICT
+# Author         : Huy-Hung Ho
+# Last modified  : Sat 21 Oct 2017 10:36:52 AM ICT
+# Guide          :
+# -----------------------------------------------------------------------------
+#!/bin/bash
+
+BASEDIR=$(dirname $(readlink -m "$0"))
+
+
+# You can change from google-chome to firefox
+WEB_BROWSER="google-chrome"
+
+NUMBER="$(echo $1 | grep -o '[0-9]\+')"
+PP_LIST="$BASEDIR/../text/paper_list.txt"
+echo $NUMBER
+
+if [ -n $NUMBER ]; then
+	if (grep -q $NUMBER $PP_LIST) then
+		echo "Paper already been read before."
+	else
+		echo "Read paper."
+		echo $NUMBER >> $PP_LIST
+	fi
+
+	$WEB_BROWSER -new-tab -url https://sci-hub.io/http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=$NUMBER &
+else
+		echo "No paper available."
+fi
+
+history 1 >> $BASEDIR/../text/log.txt

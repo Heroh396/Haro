@@ -7,5 +7,7 @@
 *.obj
 *.out
 svn/
+*question.txt
 *log.txt
 *voc.txt
+*paper_list.txt
