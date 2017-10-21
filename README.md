@@ -71,7 +71,7 @@ Install
 To build this software you just need to:
 - `git clone https://github.com/yoloh3/Haro`
 - `cd Haro`
-- `chmod u[x]x run.sh`
+- `chmod u+x run.sh`
 - `./run.sh`
 
 To remove this software:
