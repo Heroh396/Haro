@@ -9,7 +9,13 @@
 #!/bin/bash
 BASEDIR=$(dirname $(readlink -m "$0"))
 
-youtube-dl --extract-audio --audio-format mp3 --audio-quality 0 --ignore-errors -o "%(title)s.%(ext)s" $@
-mv *.mp3 ~/Music
+CLIPBOARD="$(xclip -selection c -o)"
 
+if [ ! -z "$1" -a "$1" != " " ]; then
+	youtube-dl --extract-audio --audio-format mp3 --audio-quality 0 --ignore-errors -o "%(title)s.%(ext)s" $@
+else
+	youtube-dl --extract-audio --audio-format mp3 --audio-quality 0 --ignore-errors -o "%(title)s.%(ext)s" $CLIPBOARD
+fi
+
+mv *.mp3 ~/Music
 history 1 >> $BASEDIR/../text/log.txt

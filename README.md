@@ -62,6 +62,8 @@ Requirements
 - Notify-send
 - At
 - Crontab
+- Firefox (or google-chrome)
+- Youtube-dl
 
 
 Install
