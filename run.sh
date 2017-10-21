@@ -15,11 +15,13 @@ export DISPLAY=:0
 # Variable
 BASEDIR=$(dirname $(readlink -m "$0"))
 PATH="$BASEDIR/execute:$PATH"
+INSTALL="sudo apt-get install"
 
 # Install app
-command -v notify-send >/dev/null 2>&1 	|| sudo apt-get install notify-send
-command -v at >/dev/null 2>&1 			|| sudo apt-get install at
-command -v crontab >/dev/null 2>&1 		|| sudo apt-get install crontab
+command -v notify-send >/dev/null 2>&1 	|| $INSTALL notify-send
+command -v at >/dev/null 2>&1 			|| $INSTALL at
+command -v crontab >/dev/null 2>&1 		|| $INSTALL crontab
+command -v youtube-dl >/dev/null 2>&1 	|| $INSTALL youtube-dl
 
 # Permission
 chmod u+x $BASEDIR/job/*.sh $BASEDIR/*.sh $BASEDIR/execute/*

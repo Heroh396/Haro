@@ -1,3 +1,15 @@
 google-chrome --new-tab google.com
  2110  paper https://sci-hub.io/http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7943123
  2001  weather 
+ 2001  paper http://ieeexplore.ieee.org/document/6152147/
+ 2006  paper http://ieeexplore.ieee.org/document/6152147/
+ 2012  paper http://ieeexplore.ieee.org/document/5607329/
+ 2001  ./paper.sh 
+ 2001  ./paper.sh 
+ 2011  paper
+ 2019  paper
+ 2034  paper
+ 2006  paper
+ 2006  paper
+ 2006  paper
+ 2006  paper

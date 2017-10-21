@@ -12,21 +12,25 @@ BASEDIR=$(dirname $(readlink -m "$0"))
 
 
 # You can change from google-chome to firefox
-WEB_BROWSER="google-chrome"
+WEB_BROWSER="firefox"
 
 NUMBER="$(echo $1 | grep -o '[0-9]\+')"
 PP_LIST="$BASEDIR/../text/paper_list.txt"
+CLIPBOARD="$(xclip -selection c -o)"
+C_NUMBER="$(echo $CLIPBOARD | grep -o '[0-9]\+')"
+echo $CLIPBOARD
 echo $NUMBER
 
-if [ -n $NUMBER ]; then
+if [ ! -z "$NUMBER" -a "$NUMBER" != " " ]; then
 	if (grep -q $NUMBER $PP_LIST) then
 		echo "Paper already been read before."
 	else
 		echo "Read paper."
 		echo $NUMBER >> $PP_LIST
 	fi
-
 	$WEB_BROWSER -new-tab -url https://sci-hub.io/http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=$NUMBER &
+elif [ ! -z "$C_NUMBER" -a "$C_NUMBER" != " " ]; then
+	$WEB_BROWSER -new-tab -url https://sci-hub.io/http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=$C_NUMBER &
 else
 		echo "No paper available."
 fi

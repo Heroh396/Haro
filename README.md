@@ -27,6 +27,7 @@ Features
 	- Install unity-mail to use
 
 - [x] Voc: Learning English
+	- Display new vocabulary every two minutes
 
 - Using command to add new vocabulary
 	- $ voc "hello [həˈloʊ] : xin chao"
@@ -39,6 +40,7 @@ Features
 
 - [x] Read ieeexplore paper free
 	- $ paper ieeexplore.ieee.org/document/7799795/
+	- $ paper 		(using clipboard)
 
 - [ ] Create job from excel table
 
