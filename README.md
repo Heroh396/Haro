@@ -28,8 +28,7 @@ Features
 
 - [x] Voc: Learning English
 	- Display new vocabulary every two minutes
-
-- Using command to add new vocabulary
+	- Using command to add new vocabulary
 	- $ voc "hello [həˈloʊ] : xin chao"
 
 - [x] Mp3: Convert youtube video to mp3 and save in ~/Music
