@@ -8,24 +8,24 @@
 # -----------------------------------------------------------------------------
 #!/bin/bash
 
+# Requirement
+eval "export $(egrep -z DBUS_SESSION_BUS_ADDRESS /proc/$(pgrep -u $LOGNAME gnome-session)/environ)"
+#export DISPLAY=:0.0
+
+# Variable
 BASEDIR=$(dirname $(readlink -m "$0"))
+ANSWER=$(shuf -n 1 $BASEDIR/../text/answer.txt)
+ICON="$BASEDIR/../icon/smile.png"
 
 echo $1 >> $BASEDIR/../text/question.txt
 
 if echo $1 | grep -q "?"
 then
-	shuf -n 1 $BASEDIR/../text/answer.txt
+	echo $ANSWER
+	notify-send -i $ICON -t 10000 "Haro assistant" "$ANSWER"
 else
-	echo -ne '#                         (1%)\r'
-	sleep 1
-	echo -ne '#####                     (33%)\r'
-	sleep 1
-	echo -ne '#############             (66%)\r'
-	sleep 1
-	echo -ne '#######################   (99%)\r'
-	sleep 3
-	echo -ne '\n'
-	echo "Bị lừa rồi. Haha"
+	echo "Em hổng hiểu :))"
+	notify-send -i $ICON -t 10000 "Haro assistant" "Em hổng hiểu :))"
 fi
 
 history 1 >> $BASEDIR/../text/log.txt
