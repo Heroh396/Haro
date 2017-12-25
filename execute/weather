@@ -1,4 +1,5 @@
 # -----------------------------------------------------------------------------
+vim: ft=sh
 # Project name   :
 # File name      : job/weather.sh
 # Created date   : Wed 27 Sep 2017 09:12:56 PM ICT

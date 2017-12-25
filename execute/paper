@@ -1,4 +1,5 @@
 # -----------------------------------------------------------------------------
+vim: ft=sh
 # Project name   :
 # File name      : paper
 # Created date   : Sat 21 Oct 2017 09:33:23 AM ICT
@@ -28,11 +29,10 @@ if [ ! -z "$NUMBER" -a "$NUMBER" != " " ]; then
 		echo "Read paper."
 		echo $NUMBER >> $PP_LIST
 	fi
-	#$WEB_BROWSER -new-tab -url https://sci-hub.io/http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=$NUMBER &
-	$WEB_BROWSER -new-tab -url http://sci-hub.bz/http://ieeexplore.ieee.org/document/$NUMBER &
+	$WEB_BROWSER -new-tab -url http://sci-hub.la/http://ieeexplore.ieee.org/document/$NUMBER &
 elif [ ! -z "$C_NUMBER" -a "$C_NUMBER" != " " ]; then
-	#$WEB_BROWSER -new-tab -url https://sci-hub.io/http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=$C_NUMBER &
-	$WEB_BROWSER -new-tab -url http://sci-hub.bz/http://ieeexplore.ieee.org/document/$NUMBER &
+
+	$WEB_BROWSER -new-tab -url http://sci-hub.la/http://ieeexplore.ieee.org/document/$NUMBER &
 else
 		echo "No paper available."
 fi
